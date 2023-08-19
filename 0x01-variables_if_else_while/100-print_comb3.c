@@ -6,7 +6,7 @@
  * You can only use `putchar` up to 5 times.
  * You are not allowed to use any variable of type `char`.
  * Return: 0
- */                                                                                   int main(void)
+ */int main(void)
 {
 	int i, j, k;
 
