@@ -1,11 +1,19 @@
 #include "main.h"
 
 /**
- * set_string - sets the value of a pointer to a char
- * @s: pointer to pointer we need to set to
- * @to: string to set
+ * print_chessboard - prints the chessboard
+ * @a: two dimension array to print
  */
-void set_string(char **s, char *to)
+void print_chessboard(char (*a)[8])
 {
-	*s = to;
+	int i, j;
+
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			_putchar(a[i][j]);
+		}
+		_putchar('\n');
+	}
 }
