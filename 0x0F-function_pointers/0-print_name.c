@@ -1,16 +1,14 @@
+#include "function_pointers.h"
 
-#include <stdio.h>
-
-void print_name(char *name, void (*f)(char *)) {
-    f(name);
-}
-
-void print_to_console(char *name) {
-    printf("Name: %s\n", name);
-}
-
-int main() {
-    char name[] = "John Doe";
-    print_name(name, print_to_console);
-    return 0 ;
+/**
+ * print_name - prints a name.
+ * @name: input name.
+ * @f: function pointer.
+ *
+ * Return: no return.
+ */
+void print_name(char *name, void (*f)(char *))
+{
+	if (name && f)
+		f(name);
 }
