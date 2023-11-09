@@ -4,15 +4,15 @@
  * @q: pointer to the list.
  * Return: number of nodes.
  * **/
-size_t print_dlistint(const dlistint_t *h)
+size_t print_dlistint(const dlistint_t *q)
 {
 	const dlistint(const dlistint_t *q)
 	size_t cont = 0;
-        while (node)
+	while (node)
 	{
-	printf("%i/n" , node->n);
-        cont ++;
-        node = node->next;
+	printf("%i/n", node->n);
+	cont++;
+	node = node->next;
 	}
-        return (cont);
-}	
+	return (cont);
+}
